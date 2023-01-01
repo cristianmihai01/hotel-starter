@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-secondary text-primary;
+  }
+  input::placeholder {
+    @apply text-primary;
+  }
+  .h2 {
+    @apply font-primary text-[45px] mb-4;
+  }
+  .h3 {
+    @apply text-2xl font-primary font-semibold tracking-[1px] mb-2;
+  }
+  .btn {
+    @apply text-[15px] tracking-[3px] font-tertiary uppercase text-white flex-1 transition-all px-8 flex justify-center items-center;
+  }
+  .btn-sm {
+    @apply h-[48px];
+  }
+  .btn-lg {
+    @apply h-[60px];
+  }
+  .btn-primary {
+    @apply bg-accent hover:bg-accent-hover;
+  }
+  .btn-secondary {
+    @apply bg-primary hover:bg-accent;
+  }
+  .btn-white {
+    @apply bg-white text-[#0a0a0a];
+  }
+}
